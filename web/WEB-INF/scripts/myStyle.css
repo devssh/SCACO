@@ -1,0 +1,71 @@
+body{
+    background-color: #9999ff;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.long-text{
+    width: 200px;
+}
+
+.lefty{
+    float: left;
+}
+
+.righty{
+    float: right;
+    
+}
+.clear{
+    float: left;
+    clear: both;
+    display:inline-block;
+}
+.red{
+    color: red;
+}
+.green{
+    color: green;
+}
+input{
+    margin:auto;
+    height: 30px;
+
+}
+
+input[type=submit]{
+    font-size: 20px;
+    margin:auto;
+    margin-top: 10px;
+}
+td input{
+    display: block;
+}
+
+table, th, td {
+    padding: 5px;
+    border-collapse: collapse;
+    border: 1px solid black; 
+}
+            
+tr:hover {
+    background-color: #aa22ff
+}
+
+div{
+    float: left;
+    margin-right: 20px;
+}
+
+div.next{    
+    margin-top: 50px;
+    clear: both;
+}
+
+.wrapit{
+     
+    width:1000px;
+    word-wrap: break-word;
+}
+
+
+
