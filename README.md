@@ -27,6 +27,27 @@ Although, if the user updates the data, these updates won't be shared with the u
 
 The PoC was themed around sharing sensitive medical records of patients between doctors on a cloud, which would be a perfectly valid and legal business scenario.
 
+### Session management
+We built our own authentication and session management service
+![Authentication Service](https://cdn.rawgit.com/devssh/SCACO/067e6931/AuthService.png)
+
+### RSA implementation
+We implemented the RSA algorithm with the Chinese Remainder Theorem, Fermat's Little Theorem and Extended Euclid's Theorem. So to decrypt we would Mod Inverse the bytes, while an attacker would have to run the discrete logarithm algorithm.
+Here is a GUI we built to show the workings of RSA
+![RSA](https://cdn.rawgit.com/devssh/SCACO/067e6931/rsa-impl.png)
+
+### Account information and Session management
+We gave users access to their keys for transparency
+![SCACO](https://cdn.rawgit.com/devssh/SCACO/067e6931/scaco-impl1.png)
+
+### Sharing of Medical data of patients with doctors
+Here is how a user could share data with the doctor. The doctor would receive a snapshot of the data at that point not an updating reference.
+![Sharing SCACO](https://cdn.rawgit.com/devssh/SCACO/067e6931/scaco-impl2.png)
+
+### Model for sharing the data and encryption 
+For more information read my report on this here, or the reference to the paper.
+![Model](https://cdn.rawgit.com/devssh/SCACO/067e6931/SCACO.png)
+
 ## References 
 
 Rivest Shamir Adleman(RSA) https://people.csail.mit.edu/rivest/Rsapaper.pdf
